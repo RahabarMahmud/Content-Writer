@@ -1,0 +1,35 @@
+/**
+* The css design for the second blog page.
+*
+*By Rahabar Mahmud
+*/
+.content {
+  max-width: 1200px;
+  margin: auto;
+}
+body {
+  background-color: #eaf4f9;
+  background-image: url("flag.jpg");
+}
+
+/**
+div > h1 {
+ padding: 10px;
+}*/
+
+.header{
+  background-color: rgb(62, 163, 174);
+  color: rgb(252, 252, 252);
+  text-align: center;
+  height: 60px;
+  
+  
+}
+
+#Blog2 {
+  height: 600px;
+  background-color: rgb(219, 237, 240);
+ 
+  
+}
+  

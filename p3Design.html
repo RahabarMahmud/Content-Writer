@@ -1,0 +1,923 @@
+<!--Team 7 project-->
+<!--Authors:
+    
+    Rahabar Mahmud(A00446187)
+    Mainuddin Alam Irteja(A00446752)
+    Toufiq Abir Farhan Tufan(A00446190)
+    Kazi Istiak(A00452666)-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!--The title of the page-->
+    <title>Project 3</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--The link for bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--The link for bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
+    <!--linking our own personalized css file-->
+    <link rel="stylesheet" href="./p3Design.css" />
+
+    <!--The link for bootstrap toggle buttons-->
+    <link
+      rel="stylesheet"
+      href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css"
+    />
+
+    <!--The link for bootstrap toggle switch script-->
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <!--The link for the jquery-->
+    <!--script src="https://releases.jquery.com/git/jquery-3.x-git.slim.min.js"></script-->
+
+    <script src="./jquery-3.6.0.js"></script>
+
+    <!--The personalized Javascript file-->
+    <script defer src="./p3Design.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+  </head>
+  <!--End of head-->
+
+  <body>
+    <!--The container for the headers, blog name text fields and the toggle buttons -->
+    <!--Done by Rahabar Mahmud-->
+
+      <div class="content2">
+       <div class="content">
+
+      <!--The container for the toggle buttons and the text fields.-->
+      <div class="container" id="switchBox">
+
+      <!--The headers on the top of the page-->
+      <!--Header1-->
+        <div data-span-start="1">
+          <h2 class="display-4 m-3" style="color: blue; font-size: 35px">
+            Blog Name
+          </h2>
+        </div>
+
+        <!--Header2-->
+        <div data-span-start="1">
+          <h2 class="display-4 m-3 m-3" style="color: blue; font-size: 35px">
+            Edit
+          </h2>
+        </div>
+
+        <!--Header3-->
+        <div data-span-start="1">
+          <h2 class="display-4 m-3" style="color: blue; font-size: 35px">
+            Publish
+          </h2>
+        </div>
+        <!--End of the headers-->
+
+        <!--The first row of text-fields and toggle switches-->
+        <!--First Text box for name of the blog-->
+        <div class="mt-1">
+          <h2
+            class="display-3 m-2"
+            style="color: blue; text-align: center; font-size: 35px"
+          >
+            Blog 1
+          </h2>
+        </div>
+
+        <!--First Edit Switch-->
+        <div class="m-2">
+          <div class="form-check form-switch">
+            <!--This sets the size of the toggle button-->
+            <input
+              style="width: 200px; height: 50px"
+              type="checkbox"
+              class="form-check-input edit"
+              role="switch"
+              id="edit1"
+            />
+          </div>
+        </div>
+
+        <!--First Publish Switch-->
+        <div class="m-2">
+          <div class="form-check form-switch publish">
+            <input
+              style="width: 200px; height: 50px"
+              type="checkbox"
+              class="form-check-input"
+              role="switch"
+              id="publishSwitch1"
+            />
+          </div>
+        </div>
+        <!--End of first row-->
+
+        <!--Second Row-->
+        <!--Second Text-field for the name of the blog-->
+        <div class="mt-1">
+          <h2
+            class="display-3 m-2"
+            style="color: blue; text-align: center; font-size: 35px"
+          >
+            Blog 2
+          </h2>
+        </div>
+
+        <!--Second Edit Switch-->
+        <div class="m-2">
+          <div class="form-check form-switch">
+            <!--This sets the size of the toggle button-->
+            <input
+              style="width: 200px; height: 50px"
+              type="checkbox"
+              class="form-check-input edit"
+              role="switch"
+              id="edit2"
+            />
+          </div>
+        </div>
+
+        <!--Second Publish Switch-->
+        <div class="m-2">
+          <div class="form-check form-switch publish">
+            <input
+              style="width: 200px; height: 50px"
+              type="checkbox"
+              class="form-check-input"
+              role="switch"
+              id="publishSwitch2"
+            />
+          </div>
+        </div>
+        <!--End of second row-->
+
+        <!--Third Text-field for the name of the blog-->
+        <!--Third text box-->
+        <div class="mt-1">
+          <h2
+            class="display-3 m-2"
+            style="color: blue; text-align: center; font-size: 35px"
+          >
+            Blog 3
+          </h2>
+        </div>
+
+        <!--Third Edit Switch-->
+        <div class="m-2">
+          <div class="form-check form-switch">
+            <!--This sets the size of the toggle button-->
+            <input
+              style="width: 200px; height: 50px"
+              type="checkbox"
+              class="form-check-input edit"
+              role="switch"
+              id="edit3"
+            />
+          </div>
+        </div>
+
+        <!--Third Publish Switch-->
+        <div class="m-2">
+          <div class="form-check form-switch publish">
+            <input
+              style="width: 200px; height: 50px"
+              type="checkbox"
+              class="form-check-input"
+              role="switch"
+              id="publishSwitch3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--Test buttons made by Rahabar and Toufiq for practise, but did not made into
+        the final output-->
+      <!-- Rounded switch -->
+      <!--   <label class="switch form-check-label" for="flexSwitchCheckDefault">
+      <input type="checkbox" class="form-check-input" role="switch" id="flexSwitchCheckDefault"/>
+      <span class="slider round"></span>
+   </label>  -->
+
+      <!--The design of the keyboard was made by Mainuddin Alam Irteja using CSS grids and Bootstrap.
+          The buttons when clicked will go to the desired textfield which was also done by him.
+    
+        The button pops up when we hover the mouse over each button. It then goes back to its
+        original size when we hover the mouse away from the button. 
+
+        
+        Idea presented by Toufiq Abir Farhan Tufan.
+        Code Implemented by Rahabar Mahmud-->
+
+      <div style="display: none" id="gr">
+      <div class="m-2" style="width: 100%">
+        <textarea
+          id="words"
+          onfocus="focusTextField()"
+          name="textbox"
+          rows="3"
+          cols="115"
+        ></textarea>
+      </div>
+
+      <!--Modal for Save button
+      by Mainuddin Alam Irteja-->
+      <div
+        class="modal fade"
+        id="exampleModalToggle"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5
+                class="modal-title"
+                id="exampleModalToggleLabel"
+                style="text-align: center"
+              >
+                Save ?
+              </h5>
+            </div>
+            <div class="modal-body" style="text-align: center">
+              Are you sure you want to save?
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-primary"
+                data-bs-target="#exampleModalToggle2"
+                data-bs-toggle="modal"
+                data-bs-dismiss="modal"
+              >
+                Yes
+              </button>
+              <button
+                class="btn btn-danger"
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModalToggle2"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5
+                class="modal-title"
+                id="exampleModalToggleLabel2"
+                style="text-align: center"
+              >
+                Save and Return ?
+              </h5>
+            </div>
+            <div class="modal-body" style="text-align: center">
+              Are you really sure you want to save?
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-dismiss="modal"
+                id="save"
+              >
+                Yes
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal for Cancel button
+      by Rahabar Mahmud-->
+      <div
+        class="modal fade"
+        id="exampleModalToggle3"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5
+                class="modal-title"
+                id="exampleModalToggleLabel"
+                style="text-align: center"
+              >
+                Cancel ?
+              </h5>
+            </div>
+            <div class="modal-body" style="text-align: center">
+              Are you sure you want to cancel?
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-primary"
+                data-bs-target="#exampleModalToggle4"
+                data-bs-toggle="modal"
+                data-bs-dismiss="modal"
+              >
+                Yes
+              </button>
+              <button
+                class="btn btn-danger"
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModalToggle4"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5
+                class="modal-title"
+                id="exampleModalToggleLabel2"
+                style="text-align: center"
+              >
+                Cancel ?
+              </h5>
+            </div>
+            <div class="modal-body" style="text-align: center">
+              Are you really sure you want to cancel?
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-dismiss="modal"
+                id="cancel"
+              >
+                Yes
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--The word bank and the 3 buttons-->
+      <!--Designed and implemented by Rahabar Mahmud-->
+
+        
+        <div class="theButtons input-group">
+          <div class="Element">
+          <a
+            class="btn saveDanger siz increaseSize"
+            data-bs-toggle="modal"
+            href="#exampleModalToggle"
+            role="button"
+            >Save</a
+          >
+          </div>
+
+          <div class="Element">
+            <a
+              class="btn montBlue siz increaseSize"
+              data-bs-toggle="modal"
+              href="#exampleModalToggle3"
+              role="button"
+              >Cancel</a
+            >
+          </div>
+
+          <div class="Element">
+            <a class="btn saveDanger siz increaseSize" role="button" onclick="undo()"
+              >Undo</a
+            >
+          </div>
+
+          <div class="Element">
+            <a class="btn montBlue siz increaseSize" role="button" onclick="moveCursor()"
+              >Cursor</a
+            >
+          </div>
+        </div>
+      
+
+      <!--Piggy Bank and the star and trash buttons. Designed by Mainuddin Alam
+      Irteja-->
+      <div class="m-2 input-group">
+
+        <div style="display: inline">
+          <input
+            id="bankInput"
+            type="text"
+            class="bankText"
+            onfocus="focusWordBank()"
+          />
+        </div>
+        <div style="display: inline">
+          <a data-role="button" class="btn star" onclick="addToBank()"
+            ><i class="bi bi-star increaseSize"></i>
+          </a>
+        </div>
+      </div>
+
+      <!--Keyboard with newly updated grid-->
+      <div class="grid m-3">
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar(1)"
+          id="1"
+          >1</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar(2)"
+          id="2"
+          >2</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar(3)"
+          id="3"
+          >3</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar(4)"
+          id="4"
+          >4</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar(5)"
+          id="5"
+          >5</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar(6)"
+          id="6"
+          >6</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar(7)"
+          id="7"
+          >7</a
+        >
+
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar(8)"
+          id="8"
+          >8</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar(9)"
+          id="9"
+          >9</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar(0)"
+          id="0"
+          >0</a
+        >
+
+        <!--Extra keys-->
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('!')"
+          style="display: none"
+          id="exclamation"
+          >!</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('@')"
+          style="display: none"
+          id="at"
+          >@</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('#')"
+          style="display: none"
+          id="hash"
+          >#</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('$')"
+          style="display: none"
+          id="dollar"
+          >$</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('%')"
+          style="display: none"
+          id="percentage"
+          >%</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('^')"
+          style="display: none"
+          id="power"
+          >^</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('&')"
+          style="display: none"
+          id="and"
+          >&</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('*')"
+          style="display: none"
+          id="star"
+          >*</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('(')"
+          style="display: none"
+          id="closeBracket"
+          >(</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar(')')"
+          style="display: none"
+          id="openBracket"
+          >)</a
+        >
+
+        <!--The caps lock button will turn green after it is clicked. It shows that
+          caps lock mode has been activated. By Rahabar and Toufiq-->
+        <a
+          data-role="button"
+          class="btn montBlue zoomBig doubleSpan"
+          id="capsID"
+          onclick="capsOn()"
+        >
+          Caps
+        </a>
+
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('q')"
+          >q</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('w')"
+          >w</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('e')"
+          >e</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('r')"
+          >r</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('t')"
+          >t</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('y')"
+          >y</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('u')"
+          >u</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('i')"
+          >i</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('o')"
+          >o</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('p')"
+          >p</a
+        >
+
+        <!--The shift button turns green when it has been activated. It
+        turns all the alphabets into capital ones and changes the numbers into
+        special characters. by Rahabar Mahmud-->
+        <a
+          data-role="button"
+          class="btn montBlue zoomBig doubleSpan"
+          id="shiftID"
+          onclick="shiftOn(), shiftColor(this)"
+        >
+          <i class="bi bi-arrow-up"></i>
+        </a>
+
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('a')"
+          >a</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('s')"
+          >s</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('d')"
+          >d</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('f')"
+          >f</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('g')"
+          >g</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('h')"
+          >h</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('j')"
+          >j</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('k')"
+          >k</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('l')"
+          >l</a
+        >
+        <!--These are the buttons that appears when the shift button has been
+        pressed.-->
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          id="quote1"
+          onclick='addChar("\"")'
+          >"</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('\'')"
+          style="display: none"
+          id="quote2"
+          >'</a
+        >
+
+        <a
+          data-role="button"
+          class="btn montBlue zoomBig doubleSpan"
+          onclick="addChar('bksp')"
+        >
+          <span class="iconify" data-icon="bi:backspace"></span>
+        </a>
+
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('z')"
+          >z</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('x')"
+          >x</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('c')"
+          >c</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('v')"
+          >v</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('b')"
+          >b</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('n')"
+          >n</a
+        >
+        <a data-role="button" class="btn btn-danger zoom" onclick="addChar('m')"
+          >m</a
+        >
+
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          id="comma"
+          onclick="addChar(',')"
+          >,</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('<')"
+          style="display: none"
+          id="lessThan"
+        >
+          &LT</a
+        >
+
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          id="fullStop"
+          onclick="addChar('.')"
+          >.</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('>')"
+          style="display: none"
+          id="greaterThan"
+          >&GT</a
+        >
+
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          id="questionMark"
+          onclick="addChar('?')"
+          >?</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('/')"
+          style="display: none"
+          id="forwardSlash"
+          >/</a
+        >
+
+        <a
+          data-role="button"
+          class="btn montBlue zoomBig doubleSpan"
+          onclick="addChar('\n')"
+          >Enter</a
+        >
+
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          id="plus"
+          onclick="addChar('+')"
+          >+</a
+        >
+
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('=')"
+          style="display: none"
+          id="equal"
+          >=</a
+        >
+
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('-')"
+          id="minus"
+          >-</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('_')"
+          id="underScore"
+          style="display: none"
+          >_</a
+        >
+
+        <a
+          data-role="button"
+          class="btn montBlue zoomBig spaceBar"
+          onclick="addChar(' ')"
+          >Space</a
+        >
+
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          id="semiColon"
+          onclick="addChar(';')"
+          >;</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar(':')"
+          id="colon"
+          style="display: none"
+          >:</a
+        >
+
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('&sol')"
+          id="backSlash"
+          >\</a
+        >
+        <a
+          data-role="button"
+          class="btn btn-danger zoom"
+          onclick="addChar('|')"
+          style="display: none"
+          id="line"
+          >|</a
+        >
+
+        <a
+          data-role="button"
+          class="btn montBlue zoomBig doubleSpan"
+          onclick="addChar('    ')"
+          >Tab</a
+        >
+      </div> <!--End of keyboard grid-->
+    </div> <!--End of textbox, bank and keyboard-->
+  </div> <!--End of content-->
+
+
+  <!--The div and the design for making the word bank and the delete button appear on the
+  right side of the page to make everything fit in one page. The word bank has been updated and
+  set so that it will not allow words to be entered into the word bank after it has been filled.
+  By Rahabar Mahmud-->
+  <div class="box" style="display: none" id="wordBox">
+    <div class="wordBankHeader" id="wordBankHeader">
+       <p id="head">Word Bank</p>
+    </div>
+      <div class="wordBank" id="bank"></div>
+
+      <div class="mt-1 input-group">
+        <div style="display: inline">
+          <a data-role="button" class="btn trash" id="bankToggle" onclick="mode()";
+            ><i class="bi bi-trash increaseSize"></i>
+          </a>
+        </div>
+
+      </div>
+
+
+
+  </div><!--End of content2-->
+    <!--/div-->
+  </body>
+</html>

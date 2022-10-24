@@ -1,0 +1,424 @@
+/**
+* The css file that contains all the designing of our project.
+* Authors: 
+ *  Rahabar Mahmud(A00446187)
+ *  Mainuddin Alam Irteja(A00446752)
+ *  Toufiq Abir Farhan Tufan(A00446190)
+ *  Kazi Istiak(A00452666)
+*
+*/
+
+/**
+* This is the container div for our project.
+* It has a CSS grid with 3 rows and 3 columns which are used to
+* position and size the text boxes and the edit buttons.
+* It has a grid gap of 10px.
+* - By Rahabar Mahmud
+*/
+.container {
+  display: grid;
+  grid-template-columns: 277px 275px 275px;
+  grid-template-rows: 85px 85px 85px 85px;
+  margin-top: 100px;
+  box-shadow: 4px 4px 4px #a5c2ce;
+}
+
+/**
+* Styling the intro container by changing the color of the
+* first row of the grid.
+* by Rahabar Mahmud
+*/
+.container [data-span-start="1"] {
+  grid-row-start: 1;
+  background-color: rgb(231, 238, 238);
+}
+
+/**
+ * The div that contains the other divs of our project.
+ * It make the textfield, word bank entry field, the keybaord
+ * and the save, cancel, and undo button appear.
+ * 
+ * - By Rahabar Mahmud
+ */
+.content {
+  max-width: 840px;
+  /**margin: auto;*/
+
+  /**background-color: rgba(207, 232, 241, 0.918);*/
+  /**border: 1px solid rgb(40, 138, 202);*/
+  /**justify-content: center;*/
+  display: inline-block;
+}
+
+/**
+* This is the div that contains content and the word bank.
+* It sets the total width of the page.
+*
+* By Rahabar Mahmud
+*/
+.content2 {
+  margin:auto;
+  max-width: 1250px;
+}
+
+/**
+ * This is the Css for the 'nice' body.
+ * - By Rahabar Mahmud
+ *
+ */
+body {
+  /**background-color: rgba(215, 247, 215, 0.959);*/
+  margin: auto;
+}
+
+/**
+*Intial tryouts and fails by ours truely Toufiq Abir Farhan Tufan. 
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+/* .slider.round {
+  border-radius: 100px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} */
+
+/**
+ * It sets the appeance of the toggle button using height margin and width
+ * - By Toufiq Abir Farhan Tufan
+ */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 150px; /**change box width and height as required**/
+  height: 34px;
+  margin: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/**
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}*/
+
+/**
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 33px; 
+  width: 35px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(22, 22, 177);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}*/
+
+/**
+input:checked + .slider {
+  background-color: #2196f3;
+}*/
+
+/**
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}*/
+
+/**
+* The Keyboard was made using CSS grid.
+* The grid contains 12 columns each of 50px size.
+* It also contains 4 rows which are also of size 50px.
+* 
+*-by Mainuddin Alam Irteja
+*changed and updated for P3 by Rahabar Mahmud
+*/
+.grid {
+  display: grid;
+  grid-template-columns:
+    50px 50px 50px 50px 50px 50px 50px 50px
+    50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-gap: 10px;
+}
+
+/**
+* Each buttons in the keyboard will have a border radius of 5px with the font
+* size being larger and the the text has been centered.
+*
+* by Mainuddin Alam Irteja
+* updated by Rahabar Mahmud
+*/
+.grid > a {
+  font-size: larger;
+  text-align: center;
+}
+
+#words{
+  font-size: 1.5rem;
+}
+
+/*
+*The Space bar will start at the 8th column and span two columns
+* Implemented dynamically by grid by Rahabar Mahmud
+*
+*-Failure by Mainuddin Alam Irteja
+*
+
+.len3 {
+  grid-column: 8 / span 2;
+}*/
+
+/**
+* Desigining for the grid
+* by Rahabar Mahmud
+*/
+.doubleSpan {
+  grid-column: 11 / span 2;
+}
+
+/*
+*The styling for the word bank key and that corresponding textfield
+*
+*-by Kazi Istiak
+*(not used anymore)
+
+.len4 {
+  width: 122.6px;
+  height: 50px;
+  border-radius: 1px;
+  border-style: solid;
+  font-size: larger;
+  text-align: center;
+}*/
+
+/**
+*The stylying for the star button in the
+*piggy bank. Not used currently
+*By Rahabar Mahmud
+*/
+.star {
+  width: 100px;
+  height: 55px;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  background-color: blue;
+  color: #fff;
+}
+
+/**
+* The designing for the delete from word bank button.
+*
+* By Rahabar Mahmud
+*/
+.trash {
+  width: 450px;
+  height: 55px;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  background-color: rgb(30, 154, 238);
+  color: #fff;
+  box-shadow: 5px 5px #a5c2ce;
+}
+
+/**
+* The styling for making the buttons on the webpage pop
+*up when hovered over them.
+* There are 2 functions that controls the size of the button
+*upon hover and when the mouse has been removed from over it.
+* by Rahabar Mahmud
+*/
+.zoom {
+  transition: transform 0.2s; /* Animation */
+  /*box-shadow: 5px 5px 5px rgb(118, 118, 148);*/
+  box-shadow: 5px 5px #a5c2ce;
+}
+
+.zoom:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: orange;
+  border-color: orange;
+  box-shadow: 0px 0px 0px;
+}
+
+/**
+*The desigining for the large keys. By Rahabar Mahmud
+*/
+
+.zoomBig {
+  transition: transform 0.2s; /* Animation */
+  /*box-shadow: 5px 5px 5px rgb(118, 118, 148);*/
+  box-shadow: 5px 5px #a5c2ce;
+}
+
+.zoomBig:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: grey;
+  border-color: grey;
+  box-shadow: 0px 0px 0px;
+  color: #fff;
+}
+
+/*Designing the space bar. Rahabar Mahmud*/
+.spaceBar {
+  grid-column: 3 / span 6;
+}
+
+.buttonGroup {
+  justify-content: center;
+
+  display: inline-block;
+}
+
+/*Creating the Montreal Canada Theme Colors. by Rahabar Mahmud*/
+.saveDanger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.montBlue {
+  background-color: blue;
+  color: #fff;
+}
+
+/**
+* The desigining for the buttons in the word bank,
+* It makes words longer than the width of word bank wrap.
+*
+* BY Rahabar Mahmud and Toufiq Abir Farhan
+*/
+#bank > button {
+  margin: 4px;
+  padding: 4px;
+
+  background-color: rgb(196, 235, 240);
+  border-color: rgb(149, 221, 228);
+  color: black;
+  white-space: normal;
+  font-size: 1.3rem;
+}
+
+/**
+* The designing of the word bank, its header and its text.
+*
+*By Rahabar Mahmud
+*/
+.wordBank {
+  background-color: #eaf4f8;
+  /**background-color: #f0c2c7;*/
+  /**margin-top: 10px;
+  margin-left: 10px;*/
+  width: 450px;
+  height: 370px;
+  box-shadow: 1px 2px 2px 1px #a5c2ce;
+  overflow: auto;
+  margin-top: 1px;
+  /**display: inline-block;*/
+}
+
+.wordBankHeader{
+  width: 450px;
+  height: 40px;
+  font-size: 1.5rem;
+  background-color: #3ab3e8;
+  box-shadow: 1px 2px 2px 1px #a5c2ce;
+  margin-top: 150px;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+#head{
+  /**justify-content: center;*/
+  color: white;
+  font-size: larger;
+  text-align: center;
+  justify-content: center;
+}
+
+/*Using Css to make the buttons appear under the textfield.
+ By Rahabar Mahmud*/
+.Element {
+  display:inline-block;
+  margin-left: 70px;
+  padding-top: 10px;
+  margin-right: 70px;
+}
+
+.theButtons{
+  width:845px;
+  /*font-size: 9rem;*/
+}
+
+.increaseSize{
+  font-size: 1.5rem;
+}
+
+/*Not currently used*/
+.innerElement {
+  float: below;
+}
+
+
+.box {
+  width: 400px;
+  float: right;
+}
+
+/*Setting the size of the save cance and undo buttons. By Rahabar Mahmud*/
+.siz {
+  width: 100px;
+  height: 49px;
+  margin-bottom: 16px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 5px 5px #a5c2ce;
+}
+
+/*The css for the star and the trash button. By Rahabar Mahmud*/
+.star {
+  width: 100px;
+  height: 51px;
+  text-align: center;
+  background-color: rgb(106, 171, 233);
+  color: #fff;
+}
+
+/*The text box for typing the words for the word bank. by Rahabar Mahmud*/
+
+.bankText {
+  width: 625px;
+  height: 51px;
+  font-size: 1.5rem;
+}
+
+/*Setting color for the buttons. by Rahabar Mahmud*/
+.orange {
+  background-color: orange;
+  color: #fff;
+}
